@@ -7,7 +7,11 @@ First transform the image to grayscale at low resolution (i.e. 60x60 max). You c
 
 $ convert -colorspace Gray -contrast -resize '60x60>' face.jpg face-menor.jpg
 
-Then run processa.php to generate the .inc file. Then open in scad and generate STL.
+Then run:
+
+$ processa.php > imagem-angulos-inc.scad
+
+to generate the .inc file. Then open in scad and generate STL.
 
 Patches and improvements are welcome.
 
